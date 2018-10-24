@@ -10,6 +10,15 @@
   </head>
 
   <body>
+
+    <header>
+      <!-- 共通部分の定義 -->
+      <h1><a href = "/">Rails Sample</a><h1>
+      <h1>
+        <%= link_to("DBへ", "/tests/index") %>
+      </h1>
+    </header>
+
     <%= yield %>
   </body>
 </html>

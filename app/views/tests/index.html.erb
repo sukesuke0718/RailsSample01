@@ -1,9 +1,11 @@
-<h1>DB表示<h1>
+<div>
 
-<body>
-  <% @tests.each do |test| %>
+  <h1>DB表示</h1>
 
-  <p><%= test.content %></p>
+  <ul>
+    <% @tests.each do |test| %>
+      <li><%= test.content %></li>
+    <% end %>
+  </ul>
 
-  <% end %>
-</body>
+</div>
