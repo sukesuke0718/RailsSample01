@@ -2,6 +2,7 @@ require 'date'
 
 class HomeController < ApplicationController
   def top
+    @test = Test.new
   end
 
   def test

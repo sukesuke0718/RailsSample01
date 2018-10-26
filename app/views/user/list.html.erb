@@ -1,0 +1,24 @@
+<div>
+
+<table class = "user_table">
+  <tr>
+    <td class = "user_table">名前</th>
+    <th class = "user_table">住所</th>
+    <th class = "user_table">連絡先</th>
+  </tr>
+  <% @user.each do |user| %>
+    <tr>
+      <th class = "user_table">
+        <%= user.user_name %>
+      </th>
+      <th class = "user_table">
+        <%= user.user_adress %>
+      </th>
+      <th class = "user_table">
+        <%= user.user_email %>
+    </th>
+  </tr>
+  <% end %>
+</table>
+
+</div>

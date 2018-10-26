@@ -1,0 +1,29 @@
+<h1></h1>
+
+<%= form_for(@users, url: user_info_path) do |user| %>
+  <div>
+    <%= user.label :user_id, "ID：" %>
+    <%= user.text_field :user_id, id: :user_id  %>
+  </div>
+
+  <div>
+    <%= user.label :user_name, "名前：" %>
+    <%= user.text_field :user_name, id: :user_name  %>
+  </div>
+
+  <div>
+    <%= user.label :user_passeord, "パスワード：" %>
+    <%= user.password_field :user_password, id: :user_name  %>
+  </div>
+
+  <div>
+    <%= user.label :user_adress, "住所：" %>
+    <%= user.text_field :user_adress, id: :user_adress  %>
+  </div>
+
+  <div>
+    <%= user.label :user_email, "メール：" %>
+    <%= user.email_field :user_email, id: :user_email  %>
+  </div>
+  <%= user.submit "登録" %>
+<% end %>
