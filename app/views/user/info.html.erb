@@ -1,29 +1,39 @@
-<h1></h1>
+<h1>ユーザ情報登録画面</h1>
 
 <%= form_for(@users, url: user_info_path) do |user| %>
-  <div>
-    <%= user.label :user_id, "ID：" %>
-    <%= user.text_field :user_id, id: :user_id  %>
-  </div>
 
-  <div>
-    <%= user.label :user_name, "名前：" %>
-    <%= user.text_field :user_name, id: :user_name  %>
-  </div>
+  <table>
 
-  <div>
-    <%= user.label :user_passeord, "パスワード：" %>
-    <%= user.password_field :user_password, id: :user_name  %>
-  </div>
+  <tr>
+    <th><%= user.label :user_id, "ID：" %></th>
+    <th><%= user.text_field :user_id, id: :user_id  %></th>
+  </tr>
 
-  <div>
-    <%= user.label :user_adress, "住所：" %>
-    <%= user.text_field :user_adress, id: :user_adress  %>
-  </div>
+  <tr>
+    <th><%= user.label :user_name, "名前：" %></th>
+    <th><%= user.text_field :user_name, id: :user_name  %></th>
+  </tr>
 
-  <div>
-    <%= user.label :user_email, "メール：" %>
-    <%= user.email_field :user_email, id: :user_email  %>
-  </div>
+  <tr>
+    <th><%= user.label :user_passeord, "パスワード：" %></th>
+    <th><%= user.password_field :user_password, id: :user_name  %></th>
+  </tr>
+
+  <tr>
+    <th><%= user.label :user_adress, "住所：" %></th>
+    <th><%= user.text_field :user_adress, id: :user_adress  %></th>
+  </tr>
+
+  <tr>
+    <th><%= user.label :user_email, "メール：" %></th>
+    <th><%= user.email_field :user_email, id: :user_email  %></th>
+  </tr>
+
+
+  </table>
+
+
   <%= user.submit "登録" %>
 <% end %>
+
+<p><a href = "/user/list">ユーザ一覧へ</a></p>

@@ -11,12 +11,14 @@
 
   <body>
 
-    <header>
+    <header class = "hedar_main">
       <!-- 共通部分の定義 -->
-      <h1><a href = "/">Rails Sample</a><h1>
-      <h1>
-        <%= link_to("DBへ", "/tests/index") %>
-      </h1>
+      <div>
+        <p><a href = "/">Rails Sample</a><p>
+        <p>
+          <%= link_to("DBへ", "/tests/index") %>
+        </p>
+      </div>
     </header>
 
     <%= yield %>

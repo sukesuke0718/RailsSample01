@@ -6,7 +6,6 @@
 <p><a href = "/test">testページへ</a></p>
 </div>
 
-
 <%= form_for(@test, url: test_path) do |test| %>
   <div>
     <%= test.label :content, "テスト" %>
@@ -14,3 +13,6 @@
   </div>
   <%= test.submit %>
 <% end %>
+
+
+<p><a href = "/user/info">ユーザ登録画面へ</a></p>
