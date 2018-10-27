@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   get 'user/info' => 'user#info'
   get 'user/list' => 'user#list'
-
   post 'user/info' => 'user#create'
 
   get '/tests/index' => 'tests#index'
