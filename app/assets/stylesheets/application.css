@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  background-color: #DDFFFF
+}
+
+header.hedar_main{
+  background-color: white;
+}

@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.user_table{
-  border: solid 1px #000000;
-  border-collapse: collapse;
+table.user_table{
+  // 背景色を指定
+  background-color: #CBFFD3;
 }
